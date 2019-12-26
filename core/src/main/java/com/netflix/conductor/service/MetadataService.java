@@ -113,7 +113,7 @@ public interface MetadataService {
     /**
      * @return All the event handlers registered in the system
      */
-    List<EventHandler> getEventHandlers();
+    List<EventHandler> getAllEventHandlers();
 
     /**
      * @param event      name of the event

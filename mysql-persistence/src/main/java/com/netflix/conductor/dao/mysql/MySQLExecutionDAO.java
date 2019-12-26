@@ -23,7 +23,7 @@ import com.netflix.conductor.common.metadata.tasks.TaskDef;
 import com.netflix.conductor.common.run.Workflow;
 import com.netflix.conductor.core.execution.ApplicationException;
 import com.netflix.conductor.dao.ExecutionDAO;
-import com.netflix.conductor.dao.RateLimitingDao;
+import com.netflix.conductor.dao.RateLimitingDAO;
 import com.netflix.conductor.metrics.Monitors;
 
 import javax.inject.Inject;
@@ -40,7 +40,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Singleton
-public class MySQLExecutionDAO extends MySQLBaseDAO implements ExecutionDAO, RateLimitingDao {
+public class MySQLExecutionDAO extends MySQLBaseDAO implements ExecutionDAO, RateLimitingDAO {
 
     private static final String ARCHIVED_FIELD = "archived";
     private static final String RAW_JSON_FIELD = "rawJSON";

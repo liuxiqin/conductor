@@ -20,7 +20,6 @@ import com.netflix.conductor.common.metadata.tasks.PollData;
 import com.netflix.conductor.common.metadata.tasks.Task;
 import com.netflix.conductor.common.metadata.tasks.TaskDef;
 import com.netflix.conductor.common.run.Workflow;
-
 import java.util.List;
 
 /**
@@ -251,5 +250,4 @@ public interface ExecutionDAO {
 	PollData getPollData(String taskDefName, String domain);
 
 	List<PollData> getPollData(String taskDefName);
-
 }
